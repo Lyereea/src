@@ -28,8 +28,7 @@ public class WorldGenTree extends WorldGenAbstractTree
      * The metadata value of the leaves to use in tree generation.
      */
     private final int metaLeaves;
-    @SuppressWarnings("unused")
-	private static final String __OBFID = "CL_00000438";
+    private static final String __OBFID = "CL_00000438";
 
     public WorldGenTree(boolean par1)
     {
