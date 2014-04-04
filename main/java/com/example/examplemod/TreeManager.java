@@ -17,7 +17,6 @@ public void generate(Random random, int chunkX, int chunkZ, World world,
                 case 0: generateSurface(world, random, chunkX * 16, chunkZ * 16);
                 case 1: generateEnd(world, random, chunkX * 16, chunkZ * 16);
         }
-       
 }
  
 private void generateEnd(World world, Random random, int x, int z) {
@@ -30,18 +29,17 @@ private void generateSurface(World world, Random random, int x, int z) {
 	
 	if(biomeGenBase == BiomeGenBase.plains){
 	for (int i = 0; i < 500; i++){
-                int Xcoord1 = x + random.nextInt(16); //where in chuck it generates
-                int Ycoord1 = random.nextInt(1000);//how high it generates
-                int Zcoord1 = z + random.nextInt(16); //where in chunk it generates
+            int Xcoord1 = x + random.nextInt(16); //where in chuck it generates
+            int Ycoord1 = random.nextInt(1000);//how high it generates
+            int Zcoord1 = z + random.nextInt(16); //where in chunk it generates
                
-                new WorldGenTree(false, 50, 0, 0, false).generate(world, random, Xcoord1, Ycoord1, Zcoord1);
-               
+            new WorldGenTree(false, 50, 0, 0, false).generate(world, random, Xcoord1, Ycoord1, Zcoord1);
         }
 	}
        
 }
  
-private void generateNether(World world, Random random, int x, int z) {
-       
-}
+	private void generateNether(World world, Random random, int x, int z) {
+	       
+	}
 }
